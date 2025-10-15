@@ -22,5 +22,7 @@ SELECT
         SUBSTRING(LPAD(RIGHT(REGEXP_REPLACE(phone, '[\D]', '', 'g'), 10), 10, '0') FROM 4 FOR 3),
         SUBSTRING(LPAD(RIGHT(REGEXP_REPLACE(phone, '[\D]', '', 'g'), 10), 10, '0') FROM 7 FOR 4)
     ) AS formatted_number
-FROM northwind.customers;
+FROM northwind.customers
+LIMIT(10);
+
 
