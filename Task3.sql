@@ -22,7 +22,7 @@ BEGIN
 	RETURN 'International';
     
 END;
-$$
+$$;
 -- TESTING
 -- SELECT 
 --     customerid,
@@ -31,3 +31,4 @@ $$
 --     classify_customer_by_postal_code(postalcode) AS classification
 -- FROM northwind.customers
 -- LIMIT 10;
+
